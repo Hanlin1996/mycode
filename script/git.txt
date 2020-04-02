@@ -1,5 +1,5 @@
 #添加文件到index
-git add #add后面跟空格+文件名
+git add <file1> <file2>
 
 #提交文件到仓库
 git commit -m "注释" #提交需要写注释
@@ -8,9 +8,20 @@ git commit -m "注释" #提交需要写注释
 git status
 
 #查看修改内容
-git diff readme.txt
+git diff <file>
 
 #查看修改历史
 git log #显示从近到远
 
-#
+#版本回退
+git reset --hard HEAD^ #回退到上一个版本
+git reset --hard HEAD~10 #回退到前10个版本
+
+#查看版本号
+git reflog
+
+#通过版本号回退
+git reset  --hard #hard跟空格+版本号
+
+#撤销修改
+git checkout -- <file>
