@@ -1,0 +1,16 @@
+#添加文件到index
+git add #add后面跟空格+文件名
+
+#提交文件到仓库
+git commit -m "注释" #提交需要写注释
+
+#查看是否有文件未提交
+git status
+
+#查看修改内容
+git diff readme.txt
+
+#查看修改历史
+git log #显示从近到远
+
+#
